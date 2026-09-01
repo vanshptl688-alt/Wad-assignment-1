@@ -1,0 +1,447 @@
+/* External CSS for Arvind Krishna IBM CEO webpage */
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selectors */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #161616;
+    background: #f7f9fc;
+    line-height: 1.7;
+}
+
+a {
+    color: #0f62fe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(3rem, 7vw, 5.7rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+/* ID Selector */
+#home {
+    background: #0b0f14;
+    color: white;
+}
+
+/* Class Selectors */
+.navbar {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    color: #dfe7f1;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #78a9ff;
+    text-decoration: none;
+}
+
+.hero {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    padding: 85px 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-text {
+    flex: 1.1;
+}
+
+.eyebrow,
+.section-tag {
+    color: #78a9ff;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    margin: 12px 0 20px;
+    color: #dfe7f1;
+    font-size: clamp(1.25rem, 2vw, 1.8rem);
+    font-weight: 500;
+}
+
+.hero-intro {
+    max-width: 650px;
+    color: #b9c5d3;
+    font-size: 1.08rem;
+    margin-bottom: 30px;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: 2px solid #78a9ff;
+    border-radius: 6px;
+    background: #0f62fe;
+    color: white;
+    padding: 12px 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #4589ff;
+    text-decoration: none;
+}
+
+.hero-image-wrap {
+    flex: 0 0 390px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #394452;
+}
+
+.image-credit,
+.gallery-note {
+    font-size: 0.75rem;
+    color: #8d99a8;
+    margin-top: 8px;
+}
+
+.section {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.alt-section {
+    width: 100%;
+    max-width: none;
+    padding-left: max(4%, calc((100% - 1180px) / 2));
+    padding-right: max(4%, calc((100% - 1180px) / 2));
+    background: #edf2f7;
+}
+
+.section-heading {
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    color: #0b0f14;
+}
+
+.about-card {
+    background: white;
+    padding: 36px;
+    border: 1px solid #d9e0e8;
+    border-left: 6px solid #0f62fe;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(11, 15, 20, 0.06);
+}
+
+.about-card p {
+    font-size: 1.03rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #d9e0e8;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #d9e0e8;
+    text-align: left;
+}
+
+th {
+    background: #0b0f14;
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 30%;
+    min-width: 250px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #d9e0e8;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(11, 15, 20, 0.1);
+}
+
+.number {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #0f62fe;
+    font-size: 0.85rem;
+    font-weight: 900;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.achievement-list {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+}
+
+.achievement-list li {
+    background: white;
+    border: 1px solid #d9e0e8;
+    border-radius: 10px;
+    padding: 18px 22px 18px 48px;
+    position: relative;
+}
+
+.achievement-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 20px;
+    color: #0f62fe;
+    font-weight: 900;
+}
+
+.gallery {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    flex: 1 1 30%;
+    min-width: 250px;
+    background: white;
+    border: 1px solid #d9e0e8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    padding: 0;
+    background: #f0f3f7;
+}
+
+.gallery figcaption {
+    padding: 15px 18px;
+    font-weight: 700;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info {
+    background: white;
+    padding: 30px;
+    border: 1px solid #d9e0e8;
+    border-radius: 12px;
+}
+
+.contact-info h3 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contact-form label {
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #aeb8c4;
+    border-radius: 7px;
+    padding: 13px 14px;
+    font: inherit;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #78a9ff;
+    border-color: #0f62fe;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    border: none;
+}
+
+footer {
+    background: #0b0f14;
+    color: #dfe7f1;
+    padding: 45px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.student-details {
+    text-align: right;
+}
+
+.copyright {
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid #303844;
+    color: #8d99a8;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .navbar,
+    .hero,
+    .contact-layout {
+        flex-direction: column;
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero-image-wrap {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .hero-image {
+        height: 430px;
+    }
+
+    .student-details {
+        text-align: left;
+    }
+}
+
+@media (max-width: 560px) {
+    .section {
+        padding: 65px 0;
+    }
+
+    .about-card {
+        padding: 24px;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+    .nav-links {
+        gap: 10px 14px;
+    }
+
+    .gallery img {
+        height: 300px;
+    }
+}
